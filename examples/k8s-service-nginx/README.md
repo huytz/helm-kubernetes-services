@@ -349,7 +349,7 @@ If you forget the release name, you can always look it up from the list of deplo
 ```
 $ helm ls
 NAME            REVISION        UPDATED                         STATUS          CHART                           APP VERSION     NAMESPACE
-queenly-liger    1               Sat Feb 16 11:36:01 2019        DEPLOYED        k8s-service-0.0.1-replace                       default
+queenly-liger    1               Sat Feb 16 11:36:01 2019        DEPLOYED        k8s-service-0.0.1                       default
 ```
 
 Once you have the release name, you can use the `helm uninstall` command to delete a release and undeploy all the
