@@ -12,6 +12,6 @@ entries:
       url: https://huytran.dev
     name: k8s-service
     urls:
-    - https://github.com/huytz/helm-kubernetes-services/tree/main/charts/k8s-service/k8s-service-0.0.1.tgz
+    - k8s-service-0.0.1.tgz
     version: 0.0.1
 generated: "2024-07-03T23:25:20.743069+07:00"
