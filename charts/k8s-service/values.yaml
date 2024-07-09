@@ -1,4 +1,11 @@
 ---
+applicationName: " nginx"
+
+containerImage:
+  repository: nginx
+  tag: stable
+  pullPolicy: IfNotPresent
+
 #----------------------------------------------------------------------------------------------------------------------
 # CHART PARAMETERS
 # This file declares the configuration input values for the k8s-service Helm chart.
@@ -31,7 +38,7 @@
 #   repository: nginx
 #   tag: stable
 #   pullPolicy: IfNotPresent
-
+applicationName: test
 # applicationName is a string that names the application. This is used to label the pod and to name the main application
 # container in the pod spec. The label is keyed under "gruntwork.io/app-name"
 
@@ -464,22 +471,19 @@ serviceMonitor:
 #
 # EXAMPLE:
 #
-# ingress:
-#   enabled: true
-#   ingressClassName: gateway
-#   annotations:
-#     kubernetes.io/ingress.class: nginx
-#     kubernetes.io/tls-acme: "true"
-#   path: /app
-#   servicePort: app
-#   hosts:
-#     - chart-example.local
-#   tls:
-#     - secretName: chart-example-tls
-#       hosts:
-#         - chart-example.local
 ingress:
-  enabled: false
+  enabled: true
+  ingressClassName: gateway
+  annotations:
+    kubernetes.io/tls-acme: "true"
+  path: /app
+  servicePort: app
+  hosts:
+    - chart-example.local
+  tls:
+    - secretName: chart-example-tls
+      hosts:
+        - chart-example.local
 
 # envVars is a map of strings to strings that specifies hard coded environment variables that should be set on the
 # application container. The keys will be mapped to environment variable keys, with the values mapping to the
