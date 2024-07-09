@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   k8s-service:
   - apiVersion: v1
-    created: "2024-07-03T23:25:20.745083+07:00"
+    created: "2024-07-09T22:55:47.907761+07:00"
     description: A Helm chart to package your application container for Kubernetes
-    digest: 703d7b64ed8454a313aea097607c3aeae72e6f6b0602d8088c1a1aaed3d73674
+    digest: 9c255c2093e769dfc44f0e25b1d6f02c479d317cd24b44a1920e5b0303a4acb7
     home: https://github.com/huytz/helm-kubernetes-services
     maintainers:
     - email: huy310100@gmail.com
@@ -12,6 +12,6 @@ entries:
       url: https://huytran.dev
     name: k8s-service
     urls:
-    - k8s-service-0.0.1.tgz
+    - https://huytz.github.io/helm-kubernetes-services/k8s-service-0.0.1.tgz
     version: 0.0.1
-generated: "2024-07-03T23:25:20.743069+07:00"
+generated: "2024-07-09T22:55:47.904574+07:00"
